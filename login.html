@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Clone - Log In</title>
+    <link rel="stylesheet" type="text/css" href="login-style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.png" alt="Netflix Logo" class="logo">
+        <h1 class="login-title">Log In to Your Account</h1>
+        <form class="login-form" action="login-process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="login-button">Log In</button>
+
+            
+        </form>
+
+        
+
+
+    </div>
+    <p>If New User</p><button type = "submit" class="login-button" onclick="goToSignUp()">Sign Up</button>
+</body>
+
+<script>
+    function goToSignUp() {
+            window.location.href = "signup.html";
+        }
+</script>
+</html>

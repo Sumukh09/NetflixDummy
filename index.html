@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Netflix Logo" class="logo">
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+       
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv_show.html">TV Shows</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="main">
+        
+        <div class="movie-card">
+            <img src="mov1.png" alt="Movie 1">
+            <div class="movie-info">
+                <h2 class="movie-title">Avangers Infinity War</h2>
+                <p class="movie-description">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
+            </div>
+        </div>
+        
+        <div class="movie-card">
+            <img src="mov2.png" alt="Movie 2">
+            <div class="movie-info">
+                <h2 class="movie-title">Soul</h2>
+                <p class="movie-description">Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true passion is jazz and he's good. But when he travels to another realm to help someone find their passion, he soon discovers what it means to have soul. Everybody has a soul.</p>
+            </div>
+        </div>
+        
+
+        
+    </div>
+
+    
+    </div>
+
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            
+            <div class="slide movie-slide">
+                <img src="movie1.png" alt="Movie 1">
+                <h2 class="slide-title">Spider Man To Spider Verse</h2>
+                
+            </div>
+            <div class="slide movie-slide">
+                <img src="movie2.png" alt="Movie 2">
+                <h2 class="slide-title">Home Alone</h2>
+                
+            </div>
+            <div class="slide movie-slide">
+                <img src="movie3.png" alt="Movie 3">
+                <h2 class="slide-title">Madagascar 3</h2>
+                
+            </div>
+            
+        </div>
+
+    <script src="slider.js"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>

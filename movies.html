@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies - Netflix Clone</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Netflix Logo" class="logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+        
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv_show.html">TV Shows</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <!-- Content for the Movies Page -->
+        <!-- Movies Page Content -->
+<div class="main">
+    <h1 class="page-title">Popular Movies</h1>
+    <div class="movie-list">
+        <div class="movie-item">
+            <img src="mov1.png" alt="Movie 1">
+            <h2 class="movie-title">Avangers</h2>
+            
+        </div>
+        <div class="movie-item">
+            <img src="mov2.png" alt="Movie 2">
+            <h2 class="movie-title">Soul</h2>
+        </div>
+        <!-- Add more movie items here -->
+        <!-- Content for the Movies Page -->
+
+</div>
+
+<div class="main">
+    <h1 class="page-title">Other Movies</h1>
+    <div class="movie-list">
+        <div class="movie-item">
+            <img src="movie1.png" alt="Movie 1">
+            <h2 class="movie-title">Spider Man</h2>
+            
+        </div>
+        <div class="movie-item">
+            <img src="movie2.png" alt="Movie 2">
+            <h2 class="movie-title">Home Alone</h2>
+            
+        </div>
+        <div class="movie-item">
+            <img src="movie3.png" alt="Movie 3">
+            <h2 class="movie-title">Madagascar 3</h2>
+            
+        </div>
+        
+    </div>
+
+    </div>
+</div>
+
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>
